@@ -44,3 +44,8 @@ anyting.jfkdjfds = 'fjsfjsdl';
 
 let banana  = 'banana';
 banana =  anyting;
+
+let unionType:number | string = 10;
+unionType ='hello';
+
+let unionTypes:(number | string)[] = [21,'hello'];
