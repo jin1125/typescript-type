@@ -80,3 +80,12 @@ const anotherAdd: (num1: number, num2: number) => number = function(num1: number
 };
 
 const doubleNumber:(num:number) => number = num => num *2;
+
+function doubleAndHandle(num:number,cb:(num:number)=>number):void{
+  const doubleNumber = cb(num*2)
+  console.log(doubleNumber);
+}
+
+doubleAndHandle(21,doubleNum => {
+  return doubleNum;
+})
