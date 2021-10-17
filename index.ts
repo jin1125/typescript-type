@@ -7,3 +7,13 @@ let double:string = "hello";
 let back:string = `hello`;
 let hello:string;
 hello='hello';
+
+const person = {
+  name:{
+    first:'Jack',
+    last:'Smith'
+  },
+  age:21,
+}
+
+console.log(person);
