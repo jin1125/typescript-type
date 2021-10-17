@@ -35,3 +35,12 @@ const coffee = {
 
 coffee.size = CoffeeSize.SHORT;
 console.log(CoffeeSize.SHORT);
+
+let anyting:any=true;
+anyting = 'hello';
+anyting = ['hello',33,true]
+anyting = {}
+anyting.jfkdjfds = 'fjsfjsdl';
+
+let banana  = 'banana';
+banana =  anyting;
