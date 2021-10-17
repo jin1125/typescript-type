@@ -74,3 +74,9 @@ function sayHello(): void{
 console.log(sayHello());
 let tmp:undefined;
 let tmpNull: null = undefined;
+
+const anotherAdd: (num1: number, num2: number) => number = function(num1: number,num2: number){
+  return num1 + num2;
+};
+
+const doubleNumber:(num:number) => number = num => num *2;
