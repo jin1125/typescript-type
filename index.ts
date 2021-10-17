@@ -21,3 +21,17 @@ const fruit = fruits[0];
 
 const book :[string,number,boolean] = ['business',1500,false]
 
+enum CoffeeSize{
+  SHORT,
+  TALL,
+  GRANDE,
+  VENTI,
+}
+
+const coffee = {
+  hot:true,
+  size:CoffeeSize.SHORT,
+}
+
+coffee.size = CoffeeSize.SHORT;
+console.log(CoffeeSize.SHORT);
