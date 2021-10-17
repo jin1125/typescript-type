@@ -30,3 +30,19 @@ var coffee = {
 };
 coffee.size = CoffeeSize.SHORT;
 console.log(CoffeeSize.SHORT);
+var anyting = true;
+anyting = 'hello';
+anyting = ['hello', 33, true];
+anyting = {};
+anyting.jfkdjfds = 'fjsfjsdl';
+var banana = 'banana';
+banana = anyting;
+var unionType = 10;
+unionType = 'hello';
+var unionTypes = [21, 'hello'];
+var apple = 'apple';
+var clothSize = 'small';
+var cloth = {
+    color: 'white',
+    size: 'medium'
+};

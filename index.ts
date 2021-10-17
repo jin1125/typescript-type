@@ -50,5 +50,15 @@ unionType ='hello';
 
 let unionTypes:(number | string)[] = [21,'hello'];
 
+type ClothSize = 'small'|'medium'|'large';
+
 const apple:'apple' = 'apple';
-let clothSize :'small'|'medium'|'large' =  'small';
+let clothSize :ClothSize =  'small';
+
+const cloth:{
+  color:string;
+  size:ClothSize;
+}={
+  color:'white',
+  size:'medium'
+}
