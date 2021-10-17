@@ -49,3 +49,6 @@ let unionType:number | string = 10;
 unionType ='hello';
 
 let unionTypes:(number | string)[] = [21,'hello'];
+
+const apple:'apple' = 'apple';
+let clothSize :'small'|'medium'|'large' =  'small';
