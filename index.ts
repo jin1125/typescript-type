@@ -16,4 +16,7 @@ const person = {
   age:21,
 }
 
+const fruits : string[] = ['Apple','Banana','Grape']
+const fruit = fruits[0];
+
 console.log(person);
