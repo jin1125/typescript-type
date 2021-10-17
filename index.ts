@@ -73,3 +73,4 @@ function sayHello(): void{
 
 console.log(sayHello());
 let tmp:undefined;
+let tmpNull: null = undefined;
