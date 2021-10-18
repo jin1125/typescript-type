@@ -1,8 +1,10 @@
 "use strict";
-const human = {
-    name: 'Quell',
-    age: 38,
-    greeting(message) {
-        console.log(message);
+class Developer {
+    constructor(name, age, experience) {
+        this.name = name;
+        this.age = age;
     }
-};
+    greeting(message) {
+        console.log('Hello');
+    }
+}

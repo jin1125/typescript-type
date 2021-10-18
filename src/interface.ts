@@ -4,10 +4,10 @@ interface Human {
   greeting(message:string):void
 }
 
-const human:Human ={
-  name:'Quell',
-  age:38,
-  greeting(message:string):void{
-    console.log(message);
+class Developer implements Human {
+  constructor(public name:string,public age:number,experience:number){}
+  greeting(message:string){
+    console.log('Hello');
+    
   }
 }
