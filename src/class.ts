@@ -1,6 +1,6 @@
 class Person {
   
-  constructor(public name:string, private age:number){
+  constructor(readonly name:string, protected age:number){
   }
 
   incrementAge(){
@@ -15,8 +15,21 @@ class Person {
 
 
 class Teacher extends Person{
-  constructor(name: string, age: number,public subject:string){
+  get subject():string{
+    if(!this._subject){
+      throw new Error('There is no subject.')
+    }
+    return this._subject
+  }
+  constructor(name: string, age: number,private _subject:string){
     super(name, age);
+  }
+
+  set subject(value){
+    if(!value){
+      throw new Error('There is no subject.') 
+    }
+    this._subject = value
   }
 
   greeting(){
@@ -26,4 +39,7 @@ class Teacher extends Person{
 }
 
 const teacher = new Teacher('Quill',38,'Math');
+teacher.subject = 'Music'
+console.log( teacher.subject)
 teacher.greeting();
+
