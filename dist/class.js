@@ -11,6 +11,7 @@ const quill = new Person("Quill");
 quill.greeting();
 const anotherQuill = {
     name: 'anotherQuill',
+    greeting() { },
     anotherGreeting: quill.greeting
 };
 anotherQuill.anotherGreeting();

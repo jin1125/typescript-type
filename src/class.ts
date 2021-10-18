@@ -4,7 +4,7 @@ class Person {
     this.name = initName;
   }
 
-  greeting(this:{name:string}){
+  greeting(this:Person){
     console.log(`hello! my name is ${this.name}`);
     
   }
@@ -15,6 +15,7 @@ quill.greeting();
 
 const anotherQuill ={
   name:'anotherQuill',
+  greeting(){},
   anotherGreeting:quill.greeting
 }
 
