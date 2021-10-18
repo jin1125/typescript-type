@@ -1,6 +1,6 @@
 class Person {
   
-  constructor(public readonly name:string, private age:number){
+  constructor(public name:string, private age:number){
   }
 
   incrementAge(){
@@ -13,6 +13,17 @@ class Person {
   }
 }
 
-const quill =  new Person("Quill",38);
-quill.incrementAge();
-quill.greeting();
+
+class Teacher extends Person{
+  constructor(name: string, age: number,public subject:string){
+    super(name, age);
+  }
+
+  greeting(){
+    console.log(`Hello! My name is ${this.name}. I am ${this.age} years old. I teach ${this.subject}`);
+    
+  }
+}
+
+const teacher = new Teacher('Quill',38,'Math');
+teacher.greeting();
