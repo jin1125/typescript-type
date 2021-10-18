@@ -1,5 +1,5 @@
 interface Human {
-  name: string;
+  readonly name: string;
   age: number;
   greeting(message:string):void
 }
@@ -21,4 +21,4 @@ const tmpDeveloper =  {
   }
 }
 
-const user : Human = tmpDeveloper
+const user : Human = tmpDeveloper;
