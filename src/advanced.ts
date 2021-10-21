@@ -30,7 +30,14 @@ function toUpperCase(x:string | number):string | number {
   return x
 }
 
-const upperHello = toUpperCase('hello') ;  
+interface TmpFunc{
+    (x: string): string;
+    (x: number): number;
+}
+
+function upperHello(x: string | number) {
+  return 0;
+}
 
 
 type NomadWoker = Engineer | Blogger;
