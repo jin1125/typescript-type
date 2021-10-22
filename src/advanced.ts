@@ -38,18 +38,30 @@ interface TmpFunc{
 function upperHello(x: string | number) {
   return 0;
 }
+// interface FuncA {
+//   (a:number,b:string):number
+//   (a:string,b:number):number
+// }
+// interface FuncB {
+//   (a:string):number
+// }
+
+// let intersectionFunc:FuncA & FuncB;
+// intersectionFunc = function(a:number | string ,b?:number | string){
+//   return 0
+// }
+
+
 interface FuncA {
-  (a:number,b:string):number
-  (a:string,b:number):number
+  (a:number):number
 }
 interface FuncB {
-  (a:string):number
+  (a:string):string
 }
 
-let intersectionFunc:FuncA & FuncB;
-intersectionFunc = function(a:number | string ,b?:number | string){
-  return 0
-}
+let unionFunc:FuncA | FuncB;
+unionFunc = function(a:number){return 34}
+
 
 type NomadWoker = Engineer | Blogger;
 function describeProfile(nomadWoker:NomadWoker){
