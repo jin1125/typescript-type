@@ -173,4 +173,6 @@ const array =  [10,20] as const;
 const peter = {
   name:'Peter',
   age:38
-} as const 
+} as const
+
+type PeterType = typeof peter;
