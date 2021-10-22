@@ -159,3 +159,9 @@ class AdvanceCar{
 let target = new AdvancePerson
 let source = new AdvanceCar
 target = source;
+
+function advancedFunction(...args:[number,string,boolean,...number[]]){
+
+}
+
+advancedFunction(0,'hi',true,2,2,2,2)
