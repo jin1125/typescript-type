@@ -165,3 +165,12 @@ function advancedFunction(...args:readonly [number,string,boolean,...number[]]){
 }
 
 advancedFunction(0,'hi',true,2,2,2,2)
+
+const milk = 'milk' as const;
+let drink = milk;
+
+const array =  [10,20] as const;
+const peter = {
+  name:'Peter',
+  age:38
+} as const 
